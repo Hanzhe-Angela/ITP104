@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hanzhe Chen | Student Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <meta name="description" content="ITP104 lecture on Meta Tags and Responsive Web Design">
+    <meta name="keywords" content="Web, Responsive, ITP104">
+    <meta name="author" content="Angela">
+    <style>
+        em{
+            background-color: aqua;
+        }
+        img{
+            height: 200px;
+            width: auto;
+        }
+        body{
+            background-image: url("backgroundDiana.jpg");
+            background-repeat: no-repeat;
+            height: 500px;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+        }
+        #container{
+            width: 800px;
+            margin: 0px auto;
+            background-color:bisque;
+        }
+
+        .column{
+            float: left;
+            width: 380px;
+
+        }
+        .clearfloat{
+            clear:both;
+        }
+        #row1{
+            background-color:beige;
+            text-align: center;
+        }
+        #row2 .column{
+            background-color:bisque;
+            margin: 0 10px;
+        }
+        #row3 .column{
+            background-color: aliceblue;
+            margin: 0 10px;
+        }
+        #row3{
+            background-color: aliceblue;
+        }
+        @media(max-width:767px){
+            .columnn{
+                float: none; 
+                margin: 0;
+                width: auto;
+            }
+            #container{
+                width: auto;
+                border: none;
+                margin: 0;
+
+            }
+            #row3{
+                background-color: pink;
+                margin: 0;
+            }
+            #row3 .column{
+                background-color: pink;
+                margin: 0 10px;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="row1">
+            <h1>Hanzhe Chen (Angela)</h1>
+            <p><a href="mailto:achen088@usc.edu">achen088@usc.edu</a></p>
+        </div>
+        <div id="row2">  
+            <div class="column">
+                <p>Favorite color: <em>Aqua</em></p>
+                <p>Favorite website: <a href="https://space.bilibili.com/672328094" target="_blank">Bilibili</a></p>
+                
+                <h2>Favorite Activity</h2>
+                <img src="Diana.jpg" alt="Jiaran Diana">
+            </div>
+            <div class="column">
+                <h3>School Schedule</h3>
+                <ol>
+                    <li>CSCI103</li>
+                    <li>CSCI170</li>
+                    <li>MATH226</li>
+                    <li>GESM111</li>
+                    <li>ITP104</li>
+                </ol>
+            </div>
+            <div class="clearfloat"></div>
+        </div>
+        <div id="row3">
+            <div class="column">
+                <h3>Assignments</h3>
+                <ul>
+                    <li><a href="assignment01/index.html">Assignment 01: Web Resume</a></li>
+                    <li><a href="assignment02/index.html">Assignment 02: TV Show/Movie Article</a></li>
+                    <li><a href="assignment03/index.html">Assignment 03: Two-Column TV Show/Movie Article</a></li>
+                    <li><a href="assignment04/index.html">Assignment 04: Calendar</a></li>
+                    <li><a href="assignment05/index.html">Assignment 05: TV Show/Movie Photo Collage</a></li>
+                    <li><a href="assignment06/index.html">Assignment 06: FONTS/DROPDOWN MENU, OVERLAY CAPTIONS</a></li>
+                    <li><a href="assignment07/index.html">Assignment 07: Final Project Proposal</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Labs</h3>
+                <ul>
+                    <li><a href="lab02/index.html">Lab 02: Student Page</a></li>
+                    <li><a href="lab03/index.html">Lab 03: Updated Resume</a></li>
+                    <li><a href="lab04/index.html">Lab 04: Student Layout Page</a></li>
+                    <li><a href="lab05/index.html">Lab 05: Form Page</a></li>
+                    <li><a href="lab06/index.html">Lab 06: Simple Photo Gallery</a></li>
+                    <li><a href="lab07/index.html">Lab 07: Image Puzzle</a></li>
+                    <li><a href="lab08/index.html">Lab 08: Responsive Student Page</a></li>
+                    <li><a href="lab09/index.html">Lab 09: Page With Media</a></li>
+                    <li><a href="lab10/index.html">Lab 10: Animation</a></li>
+                </ul>
+            </div>
+            <div class="clearfloat"></div>
+        </div>
+    </div>
+</body>
+</html>

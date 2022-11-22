@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Puzzle</title>
+    <style>
+        @font-face {
+            font-family: "Darling";
+            src: url("Darling.ttf");
+        }
+        body{
+            background-color: bisque;
+            margin: 0 auto;
+        }
+        #images>img{
+            float:left;
+        }
+        .clearfloat{
+            clear:both;
+        }
+        #images{
+            width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        img{
+            width: 300px;
+            height: auto;
+        }
+        #position1{
+            position: relative;
+            right: 50px;
+            bottom: -30px;
+            box-shadow: 0 0 20px #00FFFF;
+        }
+        #position2{
+            position: relative;
+            left: -30px;
+            box-shadow: 0 0 20px #00FFFF;
+        }
+        #position3{
+            position: relative;
+            right: -20px;
+            top: -40px;
+            box-shadow: 0 0 20px #00FFFF;
+        }
+        h1{
+            text-align: center;
+            font-family:Darling, sans-serif;
+            font-size: 5em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Diana Image Puzzle</h1>
+    <div id="images">
+        <img id="position1" src="split/row-1-column-1.jpg" alt="Dianapiece1">
+        <img src="split/row-1-column-2.jpg" alt="Dianapiece2">
+        <img src="split/row-1-column-3.jpg" alt="Dianapiece3">
+        <img src="split/row-2-column-1.jpg" alt="Dianapiece4">
+        <img src="split/row-2-column-2.jpg" alt="Dianapiece5">
+        <img id="position2" src="split/row-2-column-3.jpg" alt="Dianapiece6">
+        <img id="position3" src="split/row-3-column-1.jpg" alt="Dianapiece7">
+        <img src="split/row-3-column-2.jpg" alt="Dianapiece8">
+        <img src="split/row-3-column-3.jpg" alt="Dianapiece9">
+        <div class="clearfloat"></div>
+    </div>
+</body>
+</html>
