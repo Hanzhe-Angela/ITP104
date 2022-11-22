@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeping Survey Submission Form</title>
+    <style>
+        body {
+		margin: 0px;
+		background-color:#fff;
+	}
+	h1 {
+		margin: 0px;
+	}
+		
+	h2 {
+		color: rgb(128,0,0);
+	}
+	
+	h3 {
+		font-size:1.2em;
+	}
+	
+	h4 {
+		color:darkgreen;
+	}
+	
+	#header {
+		background-image: url('sleeping.jpg');
+		height: 250px;
+		background-size: cover;
+		background-position: top;
+		color: #FFF;
+		font-size: 1.5em;
+		text-align: center;
+		line-height: 250px;
+		text-shadow: 5px 5px 10px #000;
+	}
+		
+	#content {
+		width: 950px;
+		line-height:1.5;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px;
+        /* text-align:center; */
+		}
+		
+	#footer {
+		background-color: #777;
+		color: #FFF;
+		text-align: center;
+		font-size:1em;
+		line-height:50px;
+		height:50px;
+	}
+	
+	#footer p {margin:0px;}
+
+	.clearfloat {
+		clear: both;
+	}
+    .form-row {
+		margin: 10px 0px;
+
+	}
+    .main-label {
+		width: 20%;
+		/* float: left; */
+
+	}
+    button {
+		padding: 10px 20px;
+	}
+	#submit-btn {
+        background-color: purple; 
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1>Sleeping Survey Submission Form (SSSF)</h1>
+
+</div>
+
+<div id="content">
+
+    <form action="confirmation.html">
+
+        <div class="form-row">
+            <label class="main-label" for="name"> Name:</label>
+            <input type="text" id="name" placeholder="Tommy Trojan" required>
+        </div>
+        <div class="form-row">
+            <label class="main-label">What is your gender?</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label>
+            <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+            <label for="othergender"><input type="radio" id="othergender" name="gender" value="othergender">Other</label>
+            <label for="notanswer"><input type="radio" id="notanswer" name="gender" value="notanswer">Prefer not to answer</label>
+        </div>
+        <div class="form-row">
+            <label class="main-label" for="age">Your Age:</label>
+            <input type="text" id="age" placeholder="18" required>
+        </div>
+        <div class="form-row">
+            <label for="question-category" class="main-label">Select question category:</label>
+            <select id="question-category">
+                <option value="-5">less than 5 hours</option>
+                <option value="6-7">6 to 7 hours</option>
+                <option value="7-8">7 to 8 hours</option>
+                <option value="9+">9 hours and more</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label class="main-label">Problems having:</label>
+            <label for="lack"><input type="checkbox" id="lack" name="lack" value="yes">Lack of Sleep</label>
+            <label for="apnea"><input type="checkbox" id="apnea" name="apnea" value="yes">Sleep Apnea</label>
+            <label for="hypersomnia"><input type="checkbox" id="hypersomnia" name="hypersomnia" value="yes">Hypersomnia</label>
+            <label for="other"><input type="checkbox" id="other" name="other" value="yes">Other</label>
+        </div>
+
+        <div class="form-row">
+            <label for="question" class="main-label">What are your major symptoms?</label>
+            <textarea id="question" placeholder="Enter your symptoms here"></textarea>
+        </div>
+
+        <div class="form-row">
+            <label class="main-label">I Accept Terms and Conditions from AngelaCCSSA company.</label>
+            <label for="terms"><input type="checkbox" id="terms" name="terms" value="yes" required>Yes</label>
+        </div>
+        <button type="submit" id="submit-btn">Submit</button>
+        <button type="reset">Clear all</button>
+        
+    </form>
+</div>
+
+<div id="footer">
+    <p>AngelaCCSSA Company &copy; 2022</p>
+</div>
+</body>
+</html>

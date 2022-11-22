@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Photo Gallery</title>
+    <style>
+    #footer {
+		background-color: #777;
+		color: #FFF;
+		text-align: center;
+		font-size:1em;
+		line-height:50px;
+		height:50px;
+	}
+    #content{
+        margin: 0 auto;
+        background-image: url("img/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:aquamarine;
+        width: 800px;
+    }
+    #content h1{
+        text-align:center;
+        margin: 0 auto;
+        padding:20px;
+        font-size: 100px;
+        font-family:Ink Free, sans-serif;
+        color:rgb(15, 86, 110)
+    }
+    body{
+        margin: 0 auto;
+        background-color:pink;
+    }
+    .clearfloat{
+        clear:both;
+    }
+    .thumbnail-container {
+			float: left;
+			width: 250px;
+			text-align:center;
+			margin: 50px 75px;
+	
+	}
+    .thumbnail>img{
+        width:100%;
+        height:auto;
+    }
+    .thumbnail {
+		background-color: white;
+		width: 250px; 
+		height: 250px;
+		border: 1px solid #000;
+		overflow: hidden;
+		border-radius: 50%;
+		opacity:.7;
+		
+	}
+	.thumbnail:hover {
+		opacity:1;
+	}
+	
+	.thumbnail-container p {
+		visibility:hidden;
+        font-family:Ink Free, sans-serif;
+		}
+	
+	.thumbnail-container:hover p {
+		visibility:visible;
+		}
+	
+
+	
+	#footer p {margin:0px;}
+
+    </style>
+</head>
+<body>      
+    <div id="content">
+        <h1>My favorite anime characters</h1>
+        <div class="row">
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="./img/anime1.png" alt="Anime figure1">
+            </div>
+            <p>Jiaran Diana from A-SOUL</p>
+            </div>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="./img/anime2.png" alt="Anime figure2">
+            </div>
+            <p>Xiangwan Ava from A-SOUL</p>
+            </div>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="./img/anime3.png" alt="Anime figure3">
+            </div>
+            <p>Bella from A-SOUL</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="./img/anime4.png" alt="Anime figure4">
+            </div>
+            <p>Eileen from A-SOUL</p>
+            </div>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="./img/anime5.png" alt="Anime figure5">
+            </div>
+            <p>Luzao Bai from EOE</p>
+            </div>
+            <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="./img/anime6.png" alt="Anime figure6">
+            </div> 
+            <p>Youen Jiang from EOE</p>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <div id="footer">
+        <p>AngelaCCSSA Company &copy; 2022</p>
+    </div>
+</body>
+</html>

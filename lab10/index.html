@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanzhe Chen | Animation</title>
+    <style>
+        @font-face{
+            font-family: "adelia";
+            src:url("./adelia/ADELIA.otf");
+        }
+        h1{
+            font-family: adelia, sans-serif;
+            text-align: center;
+            font-size:300%;
+            color: rgb(244, 127, 147);
+        }
+        body{
+            background-image: url(./background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #peppa{
+            width: 20%;
+            margin-left: 15%;
+            position: absolute;
+        }
+        #text{
+            width: 14%;
+            position: absolute;
+        }
+        .container{
+            position: relative;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+        .container:hover{
+            transform: translate(50%, 20%);
+            transition: all 5s;
+        }
+        p{
+            font-family:adelia, sans-serif;
+            position:absolute;
+            margin-left: 2%;
+            margin-top: 4%;
+            font-size: 150%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover to move peppa</h1>
+    <div id="container">
+        <div class="container">
+            <img id="peppa" src="./pngwing.com.png" alt="peppa">
+            <img id="text" src="./text.png" alt="text bubble">
+            <p>I'm Peppa</p>
+        </div>
+
+    </div>
+</body>
+</html>
