@@ -6,25 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Hanzhe Chen (Angela) </title>
     <link href="style.css" rel="stylesheet" />
+    
     <style>
-        .left{
-            width: 40%;
-            float: left;
+
+        .content2{
+            margin: 0 auto;
+            background-image: url("./img/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 900px;
         }
-        .right p{
-            margin: 20%;
-            margin-top: 40%;
+        .content2{
+            font-size: 1.5em;
+            height: 120%;
+            /* padding: 10%; */
+        }
+        .paragraph{
+            padding: 6%;
+        }
+        #first_paragraph{
+            padding-bottom: 0;
+        }
+
+        .right h1{
+            margin-top: 27%;
+            margin-left: 10%;
+            margin-bottom: 5%;
         }
         .right{
-            width: 60%;
-            float: left;
+            float: right;
         }
-        .left img{
-            margin: 20%;
-            margin-top: 40%;
-            width: 60%;
-        }
+        @media(max-width:767px){
+            #container p{
+                font-size: 1.5em;
+            /* padding: 10%; */
+            }
+            .left, .right{
+                float: none;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .right{
+                float: none;
+            }
+            .left img{
+                width: 50%;
+                margin: 13% auto 3%;
+                margin-left: 25%;
+            }
+            
+            .right h1{
+                margin-top: 0;
+                margin-left: 5%;
+                margin-bottom: 5%;
+                text-align: center;
+            }
+            #container{
+                margin: 0 auto;
+            }
+            .content2{
+                height: 120%;
+            }
+    }
+
+
     </style>
+    
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/finalproject/parallax.js-1.5.0/parallax.min.js"></script>
+
 </head>
 <body>
     <div class="menu">
@@ -40,19 +92,53 @@
             <img src="./img/selfie.jpg" alt="my photo">
         </div>
         <div class="right">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique eius accusantium mollitia ipsa eveniet quidem, iure reiciendis tempora accusamus architecto animi odio beatae ea ex voluptates porro a sapiente, sed voluptate distinctio quas aperiam enim quisquam unde. Nobis error necessitatibus, quos quibusdam aliquid officiis ullam beatae soluta consectetur! Qui, error!</p>
+            <h1>About Me</h1>
+            <p data-scroll>I am Hanzhe Chen (you can also call me Angela), a web developer and programmer. I study in University of Southern California in class of 2026, majors in Computer Science, and minors in Web-development. I can utilize C++, Java, Python, HTML&CSS, and is learning JavaScript. In the future, I hope I can earn my livings with coding. Visit my itp104 course products <a href="../index.html" target="_blank">Here</a>. </p>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/scroll1.jpg"></div>
+
+    <div class="content2">
+        <div class="paragraph" id="first_paragraph">
+        <h2>Self-introduction</h2>
+        <p data-scroll>I was born on April 12th, 2004 in Beijing, China. I love coding, travelling, playing video games like TFT, Minecraft and Apex Legends, doing sports like tennis, badminton, table tennis and bowling, singing and dancing. A fun fact about me is that over 80% of my drawer is dresses. I am really fond of finding and cooking and of course eating delicious food. I have no idea what else I can put on a self-intro and if you have any great ideas, please click <a href="contact.html" target="_blank">Contact Me</a> page!</p>
+        </div>
+        <div class="paragraph">
+        <h2>Facts about my name</h2>
+        <p data-scroll>My Chinese name is 陈含哲 <em>Chen Hanzhe</em>. <em>Chen</em> is my family name, and my grandfather granted me the name of <em>Han</em>, meaning to have, the same Chinese character as my cousin, which is casual in China because here we have the tradition of kids in same generations of same gender have the same middle Chinese character. Then to fulfill the trick that my cousin and I both have two 口 characters in the name, my father granted me the name of <em>zhe</em>, meaning philosophy. So my name means to imply philosophy. This is really a cool name and I never see anyone having the same name as I do.</p>
         </div>
     </div>
+
+
     <div id="footer">
         <a href="https://www.instagram.com/lalalaangela_m"  target="_blank">
-            <img src="./img/Instagram_icon.png" alt="github icon">
+            <img id="first_icon" src="./img/Instagram_icon.png" alt="github icon">
         </a>
         <a href="https://github.com/Hanzhe-Angela"  target="_blank">
             <img src="./img/githubicon.png" alt="github icon">
+        </a>
+        <a href="https://space.bilibili.com/172820886"  target="_blank">
+            <img src="./img/bilibili.png" alt="bilibili icon">
         </a>
         <div id="email">
             <a id="text" href="mailto:hanzhespring@gmail.com">hanzhespring@gmail.com</a>
         </div>
     </div>
+
+    <script>
+       ScrollOut({
+            onShown: function(el) {
+            // use the web animation API
+            el.animate([{ opacity: 0 }, { opacity: 1 }], 800);
+        },
+        // onHidden: function(el) {
+        //     // hide the element initially
+        //     el.style.opacity = 0;
+        // }
+        });
+    </script>
+
 </body>
 </html>

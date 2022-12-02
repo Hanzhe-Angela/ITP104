@@ -6,28 +6,264 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Hanzhe Chen (Angela) </title>
     <link href="style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <style>
+        #container{
+            padding: 10%;
+            height: 1000px;
+            margin: 0 auto;
+        }
+        #container p{
+            font-size: 1.5em;
+        }
+        #container{
+            text-decoration: none;
+        }
+        h1{
+            font-size: 2em;
+            padding-bottom: 5%;
+        }
+        .left{
+            width: 60%;
+        }
+        .right{
+            width: 30%;
+            margin: 0 auto;
+            padding: 0% 5% 5% 5%;
+        }
+        .right img{
+            width: 60%;
+            margin: 0 auto;
+            padding-left: 30%;
+        }
+        video{
+            padding-left: 13%;
+        }
+        video, audio {
+			max-width: 100%;
+		}
+        .row{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .row2{
+            width: 400px;
+            margin: 0 auto;
+        }
+        ul li{
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .notepad{
+            width: 20%;
+            margin-left: 15%;
+            position: absolute;
+        }
+        .row2{
+            float: left;
+            position: relative;
+            /* margin-top: 10%; */
+            margin-left: 10%;
+            font-size: 80%;
+        }
+        .row2:hover{
+            transform: translate(-80%, -20%);
+            transition: all 4s infinite;
+            transition-duration: 10s;
+        }
+        .list{
+            position:absolute;
+            width: 700px;
+            margin-left: 32%;
+            margin-top: 22%;
+        }
+        .row2 img{
+            width: 80%;
+        }
+        #row2_right:hover{
+            transform: translate(80%, -20%);
+            transition: all 5s infinite;
+        }
+
+        #subtitle{
+            margin-top: 70%;
+            text-align: center;
+        }
+        #delete{
+            text-align: center;
+        }
+        @media(max-width: 991px){
+            .row2:hover{
+                transform: none;
+            }
+            .row2{
+                float:none;
+            }
+            #row2_right:hover{
+                transform: none;
+                transition: none;
+            }
+            .notepad{
+                position: relative;
+            }
+            .left{
+                float: none;
+                width: 100%;
+                margin-top: 10%;
+            }
+            .right{
+                float: none;
+                width: 70%;
+                padding: 10%;
+            }
+            .video{
+                width: 80%;
+            }
+            #container{
+                height: 120%;
+            }
+            .list{
+                position: relative;
+            }
+            .notepad{
+                display: none;
+            }
+            .row2{
+                width: 100%;
+                font-size: 80%;
+                margin: 0 auto;
+            }
+            .row{
+                width: 100%;
+                margin: 0 auto;
+            }
+            #delete{
+                display: none;
+            }
+            #subtitle{
+                margin-top: 0;
+                font-size: 200%;
+            }
+            .list{
+                font-size: 120%;
+            }
+            video{
+                padding: 0;
+            }
+           
+        }
+
+
+
+    </style>
 </head>
 <body>
     <div class="menu">
         <div class="change">
-            <a class="active" href="index.html">Home</a>
-            <a href="education.html">Education</a>
+            <a href="index.html">Home</a>
+            <a class="active" href="education.html">Education</a>
             <a href="fun.html">Fun Facts</a>
             <a href="contact.html">Contact Me</a>
         </div>
     </div>
     <div id="container">
+        <div class="left">
+            <h1>My Education Experience</h1>
+            <ul>
+                <li data-scroll>
+                    <h2>Primary School affiliated to Renmin University of China</h2>
+                    <p>2010-2016</p>
+                    <p>Primary School</p>
+                </li>
+                <li data-scroll> 
+                    <h2>Beijing 101 Middle School</h2>
+                    <p>2016-2019</p>
+                    <p>Junior High</p>
+                </li>
+                <li data-scroll>
+                    <h2>High School affiliated to Renmin University of China</h2>
+                    <p>2019-2022</p>
+                    <p>Senior High</p>
+                </li>
+                <li data-scroll>
+                    <h2>University of Southern California</h2>
+                    <p>2022-today</p>
+                    <p>Bachelor's Degree</p>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- <img src="./img/ID.jpg" alt="ID Photo of me"> -->
+            <video controls loop muted poster="img/selfie2.jpg">
+                <source src="img/uniformAngela.MP4">
+                Your browser does not support video tag.
+            </video>
+        </div>
+
+
+
+
+        <div class="row">
+            <h2 id="subtitle">Courses Taken</h2>
+            <h2 id="delete">(Hover to see 2023 Spring)</h2>
+            <div class="row2">
+                <img class="notepad" src="./img/note.png" alt="notepad">
+                <div class="list">
+                    <ul>
+                        <li><h2>2023 Spring</h2></li>
+                        <li><p>CSCI 104</p></li>
+                        <li><p>ITP 303</p></li>
+                        <li><p>AMST 101</p></li>
+                        <li><p>WRIT 150</p></li>
+                    </ul>                    
+                </div>
+        </div>
+        <div class="row2" id="row2_right">
+            <img class="notepad" src="./img/note.png" alt="notepad">
+            <div class="list">
+                <ul> 
+                        
+                    <li><h2>2022 Fall</h2></li>
+                    <li><p>CSCI 103</p></li>
+                    <li><p>CSCI 170</p></li>
+                    <li><p>MATH 226</p></li>
+                    <li><p>ITP 104</p></li>
+                    <li><p>GESM 111</p></li>    
+                </ul>
+            </div>
+            <div class="clearfloat"></div>
+        </div>
+        <div class="clearfloat"></div>
+        </div>
     </div>
+
     <div id="footer">
         <a href="https://www.instagram.com/lalalaangela_m"  target="_blank">
-            <img src="./img/Instagram_icon.png" alt="github icon">
+            <img id="first_icon" src="./img/Instagram_icon.png" alt="github icon">
         </a>
         <a href="https://github.com/Hanzhe-Angela"  target="_blank">
             <img src="./img/githubicon.png" alt="github icon">
+        </a>
+        <a href="https://space.bilibili.com/172820886"  target="_blank">
+            <img src="./img/bilibili.png" alt="bilibili icon">
         </a>
         <div id="email">
             <a id="text" href="mailto:hanzhespring@gmail.com">hanzhespring@gmail.com</a>
         </div>
     </div>
+
+    <script>
+        ScrollOut({
+             onShown: function(el) {
+             // use the web animation API
+             el.animate([{ opacity: 0 }, { opacity: 1 }], 800);
+         },
+         // onHidden: function(el) {
+         //     // hide the element initially
+         //     el.style.opacity = 0;
+         // }
+         });
+     </script>
 </body>
 </html>

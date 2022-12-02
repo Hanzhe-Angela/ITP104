@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/finalproject/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
 .change{
     width: 100%;
     font-size: 0;
@@ -8,7 +12,7 @@
 .change a{
     text-decoration: none;
     background-color: rgb(140, 204, 168);
-    width: 10%;
+    width: 25%;
     height: 10%;
     line-height: 300%;
     display: inline-block;
@@ -27,7 +31,6 @@
 .menu{
     background-color:rgb(116, 189, 160);
     position:fixed;
-
 }
 #container{
     margin: 0 auto;
@@ -40,13 +43,16 @@
 body{
     margin: 0;
 }
-p{
+p, h1{
     text-decoration:none;
     margin: 0;
 }
+#first_icon{
+    padding-left: 10%;
+}
 #footer img{
     width: 2%;
-    margin: 1% 0 1% 5%;
+    margin: 1% 0 1% 4%;
     /* display: inline-block; */
     float: left;
 }
@@ -62,11 +68,11 @@ p{
 #text{
     text-decoration: none;
     color: grey;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Montserrat, sans-serif;
     /* display: inline-block; */
     float: left;
     margin-top: 1%;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 #email{
     /* display: inline-block; */
@@ -74,3 +80,109 @@ p{
     font-size: 150%;
     vertical-align: center;;
 }
+p, a, h1, h2, h3, h4, h5,li,form,button,text,textarea{
+    font-family: Montserrat,sans-serif;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.clearfloat{
+    clear: both;
+}
+li{
+    text-decoration:none;
+}
+.left{
+    width: 40%;
+    float: left;
+}
+.right p{
+    margin: 10%;
+    margin-top: 0%;
+    font-size: 2em;
+}
+.right h1{
+    font-size: 2.5em;
+}
+.right{
+    width: 60%;
+    float: left;
+}
+.left img{
+    margin: 20%;
+    margin-top: 40%;
+    width: 60%;
+}
+[data-scroll] {
+    transition: opacity 1s;
+  }
+  [data-scroll="in"] {
+    opacity: 1;
+  }
+  [data-scroll="out"] {
+    opacity: 0;
+  }
+
+  @media(max-width:767px){
+    .change a{
+        text-decoration: none;
+        background-color: rgb(140, 204, 168);
+        width: 25%;
+        height: 10%;
+        line-height: 300%;
+        text-align: center;	
+        color: #000;
+        font-size:20px;
+    }
+    .change{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;	
+        position:fixed;
+    }
+    /* #container{
+        height: 1500px;
+    } */
+    #email{
+        width: 10%;
+        font-size: 100%;
+    }
+    #footer img{
+        width: 7%;
+    }
+}
+
+    @media(max-width: 991px) and  (min-width: 768px){
+        .change a{
+            text-decoration: none;
+            background-color: rgb(140, 204, 168);
+            width: 25%;
+            height: 10%;
+            line-height: 300%;
+            /* display: inline-block; */
+            text-align: center;	
+            color:#000;
+            font-size:20px;
+        }
+        .change{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;	
+            position:fixed;
+        }
+        #container{
+            height: 1200px;
+        }
+        #email{
+            width: 20%;
+            font-size: 80%;
+        }
+        #email{
+            width: 10%;
+            font-size: 100%;
+        }
+        #footer img{
+            width: 7%;
+        }
+    }
