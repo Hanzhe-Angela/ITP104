@@ -1,148 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hanzhe Chen | Student Page</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width, initial-scale=1.0">
-    <meta name="description" content="ITP104 lecture on Meta Tags and Responsive Web Design">
-    <meta name="keywords" content="Web, Responsive, ITP104">
-    <meta name="author" content="Angela">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Hanzhe Chen (Angela) </title>
+    <link href="style.css" rel="stylesheet" />
+    
     <style>
-        em{
-            background-color: aqua;
-        }
-        img{
-            height: 200px;
-            width: auto;
-        }
-        body{
-            background-image: url("backgroundDiana.jpg");
+
+        .content2{
+            margin: 0 auto;
+            background-image: url("./img/background.jpg");
             background-repeat: no-repeat;
-            height: 900px;
-            width: auto;
             background-size: cover;
-            background-position: center;
+            height: 900px;
         }
-        #container{
-            width: 800px;
-            margin: 0px auto;
-            background-color:bisque;
+        .content2{
+            font-size: 1.5em;
+            height: 120%;
+            /* padding: 10%; */
+        }
+        .paragraph{
+            padding: 6%;
+        }
+        #first_paragraph{
+            padding-bottom: 0;
         }
 
-        .column{
-            float: left;
-            width: 380px;
-
+        .right h1{
+            margin-top: 27%;
+            margin-left: 10%;
+            margin-bottom: 5%;
         }
-        .clearfloat{
-            clear:both;
-        }
-        #row1{
-            background-color:beige;
-            text-align: center;
-        }
-        #row2 .column{
-            background-color:bisque;
-            margin: 0 10px;
-        }
-        #row3 .column{
-            background-color: aliceblue;
-            margin: 0 10px;
-        }
-        #row3{
-            background-color: aliceblue;
+        .right{
+            float: right;
         }
         @media(max-width:767px){
-            .columnn{
-                float: none; 
-                margin: 0;
-                width: auto;
+            #container p{
+                font-size: 1.5em;
+            /* padding: 10%; */
+            }
+            .left, .right{
+                float: none;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .right{
+                float: none;
+            }
+            .left img{
+                width: 50%;
+                margin: 13% auto 3%;
+                margin-left: 25%;
+            }
+            
+            .right h1{
+                margin-top: 0;
+                margin-left: 5%;
+                margin-bottom: 5%;
+                text-align: center;
             }
             #container{
-                width: auto;
-                border: none;
-                margin: 0;
-
+                margin: 0 auto;
             }
-            #row3{
-                background-color: pink;
-                margin: 0;
+            .content2{
+                height: 120%;
             }
-            #row3 .column{
-                background-color: pink;
-                margin: 0 10px;
-            }
-
-        }
+    }
 
 
     </style>
+    
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/finalproject/parallax.js-1.5.0/parallax.min.js"></script>
+
 </head>
 <body>
-    <div id="container">
-        <div id="row1">
-            <h1>Hanzhe Chen (Angela)</h1>
-            <p><a href="mailto:achen088@usc.edu">achen088@usc.edu</a></p>
-        </div>
-        <div id="row2">  
-            <div class="column">
-                <p>Favorite color: <em>Aqua</em></p>
-                <p>Favorite website: <a href="https://space.bilibili.com/672328094" target="_blank">Bilibili</a></p>
-                
-                <h2>Favorite Activity</h2>
-                <img src="Diana.jpg" alt="Jiaran Diana">
-            </div>
-            <div class="column">
-                <h3>School Schedule</h3>
-                <ol>
-                    <li>CSCI103</li>
-                    <li>CSCI170</li>
-                    <li>MATH226</li>
-                    <li>GESM111</li>
-                    <li>ITP104</li>
-                </ol>
-            </div>
-            <div class="clearfloat"></div>
-        </div>
-        <div id="row3">
-            <div class="column">
-                <h3>Assignments</h3>
-                <ul>
-                    <li><a href="assignment01/index.html">Assignment 01: Web Resume</a></li>
-                    <li><a href="assignment02/index.html">Assignment 02: TV Show/Movie Article</a></li>
-                    <li><a href="assignment03/index.html">Assignment 03: Two-Column TV Show/Movie Article</a></li>
-                    <li><a href="assignment04/index.html">Assignment 04: Calendar</a></li>
-                    <li><a href="assignment05/index.html">Assignment 05: TV Show/Movie Photo Collage</a></li>
-                    <li><a href="assignment06/index.html">Assignment 06: FONTS/DROPDOWN MENU, OVERLAY CAPTIONS</a></li>
-                    <li><a href="assignment07/index.html">Assignment 07: Final Project Proposal</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>Labs</h3>
-                <ul>
-                    <li><a href="lab02/index.html">Lab 02: Student Page</a></li>
-                    <li><a href="lab03/index.html">Lab 03: Updated Resume</a></li>
-                    <li><a href="lab04/index.html">Lab 04: Student Layout Page</a></li>
-                    <li><a href="lab05/index.html">Lab 05: Form Page</a></li>
-                    <li><a href="lab06/index.html">Lab 06: Simple Photo Gallery</a></li>
-                    <li><a href="lab07/index.html">Lab 07: Image Puzzle</a></li>
-                    <li><a href="lab08/index.html">Lab 08: Responsive Student Page</a></li>
-                    <li><a href="lab09/index.html">Lab 09: Page With Media</a></li>
-                    <li><a href="lab10/index.html">Lab 10: Animation</a></li>
-                </ul>
-                <div class="clearfloat"></div>
-            </div>
-            <div id="row4">
-                <div class="column" id="pink">
-                    <h3>Final Project</h3>
-                    <ul>
-                        <li><a href="finalproject/index.html">Final Project</a></li>
-                        <li><a href="finalproject/summay.html">Final Project Summary</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="clearfloat"></div>
+    <div class="menu">
+        <div class="change">
+            <a class="active" href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="fun.html">Fun Facts</a>
+            <a href="contact.html">Contact Me</a>
         </div>
     </div>
+    <div id="container">
+        <div class="left">
+            <img src="./img/selfie.jpg" alt="my photo">
+        </div>
+        <div class="right">
+            <h1>About Me</h1>
+            <p data-scroll>I am Hanzhe Chen (you can also call me Angela), a web developer and programmer. I study in University of Southern California in class of 2026, majors in Computer Science, and minors in Web-development. I can utilize C++, Java, Python, HTML&CSS, and is learning JavaScript. In the future, I hope I can earn my livings with coding. Visit my itp104 course products <a href="../index.html" target="_blank">Here</a>. </p>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/scroll1.jpg"></div>
+
+    <div class="content2">
+        <div class="paragraph" id="first_paragraph">
+        <h2>Self-introduction</h2>
+        <p data-scroll>I was born on April 12th, 2004 in Beijing, China. I love coding, travelling, playing video games like TFT, Minecraft and Apex Legends, doing sports like tennis, badminton, table tennis and bowling, singing and dancing. A fun fact about me is that over 80% of my drawer is dresses. I am really fond of finding and cooking and of course eating delicious food. I have no idea what else I can put on a self-intro and if you have any great ideas, please click <a href="contact.html" target="_blank">Contact Me</a> page!</p>
+        </div>
+        <div class="paragraph">
+        <h2>Facts about my name</h2>
+        <p data-scroll>My Chinese name is 陈含哲 <em>Chen Hanzhe</em>. <em>Chen</em> is my family name, and my grandfather granted me the name of <em>Han</em>, meaning to have, the same Chinese character as my cousin, which is casual in China because here we have the tradition of kids in same generations of same gender have the same middle Chinese character. Then to fulfill the trick that my cousin and I both have two 口 characters in the name, my father granted me the name of <em>zhe</em>, meaning philosophy. So my name means to imply philosophy. This is really a cool name and I never see anyone having the same name as I do.</p>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <a href="https://www.instagram.com/lalalaangela_m"  target="_blank">
+            <img id="first_icon" src="./img/Instagram_icon.png" alt="github icon">
+        </a>
+        <a href="https://github.com/Hanzhe-Angela"  target="_blank">
+            <img src="./img/githubicon.png" alt="github icon">
+        </a>
+        <a href="https://space.bilibili.com/172820886"  target="_blank">
+            <img src="./img/bilibili.png" alt="bilibili icon">
+        </a>
+        <div id="email">
+            <a id="text" href="mailto:hanzhespring@gmail.com">hanzhespring@gmail.com</a>
+        </div>
+    </div>
+
+    <script>
+       ScrollOut({
+            onShown: function(el) {
+            // use the web animation API
+            el.animate([{ opacity: 0 }, { opacity: 1 }], 800);
+        },
+        // onHidden: function(el) {
+        //     // hide the element initially
+        //     el.style.opacity = 0;
+        // }
+        });
+    </script>
+
 </body>
 </html>

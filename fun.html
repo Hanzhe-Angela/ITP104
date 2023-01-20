@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Hanzhe Chen (Angela) </title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        #container{
+            margin: 0 auto;
+            height: 1000px;
+        }
+        .video{
+            width: 1000px;
+            height: 700px;
+            margin: 0 auto;
+        }
+        iframe{
+            width: 1000px;
+            height: 700px;
+        }
+        .text{
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            padding-top: 7%;
+            padding-bottom: 0%;
+            text-align: center;
+        }
+        @media(max-width: 991px) and  (min-width: 768px){
+            .video{
+                width: 80%;
+            }
+            .text{
+                width: 100%;
+            }
+            iframe{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                height: 50%;
+            }
+            .text h1{
+                font-size: 120%;
+                text-align: center;
+                margin-top: 5%;
+            }
+            #container{
+                height: 70%;
+            }
+        }
+        @media(max-width: 768px){
+            .video{
+                width: 80%;
+            }
+            .text{
+                width: 100%;
+            }
+            iframe{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                height: 50%;
+                margin-top: 5%;
+            }
+            .text h1{
+                font-size: 120%;
+                text-align: center;
+                margin-top: 10%;
+            }
+            #container{
+                height: 700px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="change">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a class="active" href="fun.html">Fun Facts</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
+    <div id="container">
+        <div class="text">
+        <h1>This is a video made my friend Moring, Cynthia and I.</h1>
+        </div>
+        <div class="video">
+        <iframe src="//player.bilibili.com/player.html?aid=987601277&bvid=BV1Lt4y1N7Cm&cid=890458678&page=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="https://www.instagram.com/lalalaangela_m"  target="_blank">
+            <img id="first_icon" src="./img/Instagram_icon.png" alt="github icon">
+        </a>
+        <a href="https://github.com/Hanzhe-Angela"  target="_blank">
+            <img src="./img/githubicon.png" alt="github icon">
+        </a>
+        <a href="https://space.bilibili.com/172820886"  target="_blank">
+            <img src="./img/bilibili.png" alt="bilibili icon">
+        </a>
+        <div id="email">
+            <a id="text" href="mailto:hanzhespring@gmail.com">hanzhespring@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+</html>

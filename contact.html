@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Hanzhe Chen (Angela) </title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        .form-row {
+            margin: 10px 0px;
+        }
+        .main-label {
+            width: 20%;
+            /* float: left; */
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 auto;
+            text-align:center;
+            font-size: 1em;
+        }
+        #submit-btn {
+            background-color: purple; 
+            color: white;
+        }
+        body{
+            margin: 0 auto;
+        }
+        #form{
+            width: 1000px;
+            margin: 0 auto;
+            padding-top: 4%;
+            font-size: 1.5em;
+        }
+        #container{
+            margin: 0 auto;
+            height: 700px;
+        }
+        input,select,text{
+            font-family: Montserrat, sans-serif;
+            font-size: 0.9em;
+        }
+        textarea{
+            width: 80%;
+            height: 300px;
+            font-size: 0.9em;
+        }
+        @media(max-width: 991px){
+            #form{
+                width: 80%;
+                padding-top: 15%;
+            }
+            textarea{
+                width: 80%;
+                margin: 0;
+                padding: 0;
+            }
+            #container{
+                height: 800px
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="change">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="fun.html">Fun Facts</a>
+            <a class="active" href="contact.html">Contact Me</a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="form">
+        <form action="confirm.html">
+
+            <div class="form-row">
+                <label class="main-label" for="name"> Name:</label>
+                <input type="text" id="name" placeholder="Tommy Trojan" required>
+            </div>
+
+            <div class="form-row">
+                <label class="main-label" for="email1">Your Email:</label>
+                <input type="text" id="email1" placeholder="ttrojan@usc.edu" required>
+            </div>
+
+            <div class="form-row">
+                <label for="question-category" class="main-label">Select question category:</label>
+                <select id="question-category">
+                    <option value="job_offers">Job Offers</option>
+                    <option value="about_Angela">About Angela</option>
+                    <option value="About_the_website">About the Website</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+    
+    
+            <div class="form-row">
+                <label for="question" class="main-label">What do you want to tell me:</label>
+                <textarea id="question" placeholder="Enter your suggestions here"></textarea>
+            </div>
+    
+            <div class="form-row">
+                <label class="main-label">I want to receive an email back.</label>
+                <label for="terms"><input type="checkbox" id="terms" name="terms" value="yes" required>Yes</label>
+            </div>
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="reset">Clear all</button>
+            
+        </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a href="https://www.instagram.com/lalalaangela_m"  target="_blank">
+            <img id="first_icon" src="./img/Instagram_icon.png" alt="github icon">
+        </a>
+        <a href="https://github.com/Hanzhe-Angela"  target="_blank">
+            <img src="./img/githubicon.png" alt="github icon">
+        </a>
+        <a href="https://space.bilibili.com/172820886"  target="_blank">
+            <img src="./img/bilibili.png" alt="bilibili icon">
+        </a>
+        <div id="email">
+            <a id="text" href="mailto:hanzhespring@gmail.com">hanzhespring@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+</html>
